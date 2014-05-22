@@ -1,6 +1,6 @@
 <!--  Product Gallery  -->
 
-<!-- Only show it there are images -->
+<!-- Only show if there are images -->
 <div ng-show="product.images.length">
   
   <div class="img-wrap">
@@ -8,6 +8,8 @@
   </div>
   
   <ul class="img-thumbnails clearfix">
+    
+    <!-- List of all images -->
     <li class="small-image pull-left thumbnail" ng-repeat="image in product.images">
       <img ng-src="{{image}}" />
     </li>

@@ -1,5 +1,8 @@
 <!DOCTYPE html>
+
+<!-- attach the gemStore app to our site -->
 <html ng-app="gemStore">
+ 
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
@@ -9,7 +12,9 @@
     <script type="text/javascript" src="js/products.js"></script>
   </head>
 
+  <!-- attach the gemStore app to the body -->
   <body ng-controller="StoreController as store">
+   
     <!--  Store Header  -->
     <header>
       <h1 class="text-center">Flatlander Crafted Gems</h1>
@@ -18,11 +23,11 @@
 
     <!--  Products Container  -->
     <div class="list-group">
-      <!--  Product Container  -->
+      <!--  Product Container - iterate over all products in the store -->
       <div class="list-group-item" ng-repeat="product in store.products">
         <h3>{{product.name}} <em class="pull-right">{{product.price | currency}}</em></h3>
 
-        <!-- Image Gallery  -->
+        <!-- Image Gallery -  -->
         <product-gallery></product-gallery>
 
         <!-- Product Tabs  -->
@@ -30,5 +35,7 @@
       </div>
 
     </div>
+    
   </body>
+  
 </html>
