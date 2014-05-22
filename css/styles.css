@@ -1,0 +1,17 @@
+li.small-image	{
+	margin: 20px 0 10px 0;
+	width: 50px;
+}
+
+.list-group	{
+	min-width:400px;
+	margin: 20px 30%;
+}
+
+.ng-invalid.ng-dirty {
+	border-color: #FA787E;
+}
+
+.ng-valid.ng-dirty {
+	border-color: #78FA89;
+}
